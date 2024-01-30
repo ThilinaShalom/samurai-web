@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Link to Poppins font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+    <!--Boostrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+      <script defer src="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/package.json"></script>
+
+      <!--animate-->
+<link href="wow/animatew.css" rel="stylesheet" type="text/css" media="all">
+
+<script src="wow/wow.min.js"></script>
+  <script>
+     new WOW().init();
+  </script>
+   
+
+<style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+        .body{
+            width:200vw;
+            align-items: grid;
+        }
+
+
+
+        .carousel-caption-1{
+            position: absolute;
+            top: 50%;
+            start: 50%;
+            transform: translate(0%, -90%);
+            background-color: rgba(43, 45, 66, 0.6);
+            width: 80%;
+            left: 10%;
+            text-align: left;
+            padding: 2rem;
+            border-radius: 0.25rem;
+        }
+        .carousel-item-1 {
+            position: relative;
+            height: 100vh; /* Adjust as needed */
+        }
+
+
+        .zoom-on-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.6s ease;
+            background-color: #D90429;
+        }
+
+        .zoom-on-hover-nobg:hover{
+          transform: scale(1.05);
+          transition: transform 0.6s ease;
+        }
+
+
+
+        .rectangle-text-1,
+        .rectangle-text-2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4vw;
+            font-weight: 600;
+            margin-bottom: 10px; /* Adjusted margin */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .rectangle-text-1 {
+            animation: typewriter1 4s steps(40) infinite;
+            font-size: 3.2vw;
+
+        }
+
+        .rectangle-text-1-1 {
+            animation: typewriter1 4s steps(40) infinite;
+        }
+
+        .rectangle-text-2 {
+            animation: none;
+        }
+
+        @keyframes typewriter1 {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+               .cover{
+            width: 120rem;
+            height:auto;
+
+        }
+        .custom-card {
+            width: 95%;
+            height: 100%;
+            background: #2B2D42;
+            font-size: 115%;
+            margin-top: -40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10%;
+
+
+           
+        }
+
+        .custom-card-2 {
+            width: 100%;
+            height: 65%;
+            border-radius:1.375rem;
+            
+
+        }
+       .custom-card-2-2{
+            width: 100%;
+            height: 65%;
+            border-radius:1.375rem;
+       }
+       .custom-card-3 {
+            width: 100%;
+            height: 100%;
+            border-radius:1.375rem;
+            background: #2B2D42;
+            margin-top: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+       }
+        .custom-card-4{
+            width: 120rem;
+            height: 17rem;
+            object-fit: cover;
+            /*border-radius:1.375rem;*/
+            margin-top: auto;
+            margin-left:auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            align-items: center;
+
+        }
+        
+        .custom-card-5{
+            width: 120rem;
+            height: 8rem;
+            object-fit: cover;
+            /*border-radius:1.375rem;*/
+            margin-top: auto;
+            margin-left:auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            align-items: center;
+        }
+
+        .custom-card-6{
+            width:100%; 
+            height:100%;
+            border-radius:1rem;
+            background: #2B2D42;
+            margin-top: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+
+        .logobar{
+            width: 120rem;
+            height: auto;
+
+        }
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+        /* Footer Links Style */
+        .footer a,
+        .footer a:visited {
+            color: white !important; 
+            text-decoration: none; 
+        }
+
+        
+        .footer a:hover {
+            color: #D90429 !important; 
+        }
+
+        
+        .footer ul.list-unstyled li {
+            list-style: none;
+        }
+
+       
+        .footer .d-flex a {
+            color: white !important; 
+            margin-right: 10px; 
+        }
+
+        
+        .footer .d-flex a:hover {
+            color: #D90429 !important; 
+        }
+
+        #spinner-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1000;
+            
+        }
+
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid #D90429;
+            width: 40px;
+            height: 40px;
+            animation: spin .6s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .scroll-watcher{
+            height:10px;
+            position: center;
+            top: 0;
+            z-index: 1000;
+            background-color:#D90429 ;
+            width: 100%;
+            scale: 0 1;
+            animation: scroll-watcher linear;
+            animation-timeline: scroll();
+        }
+
+
+        @keyframes scroll-watcher {
+            to { scale: 1 1; }
+        }
+</style>
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+
+    <title>SAMURAI GLOBAL LTD</title>
+</head>
+
+<body class="mb-0 mt-5 pt-3 p-0" style="font-family: 'Poppins', sans-serif; margin: 0;">
+
+  
+<!--------------header------------------------------->
+
+<div class="container">
+      <div id="spinner-overlay">
+              <div class="spinner"></div>
+          </div>
+              <div class="scrollbar" id="style-3">
+      <div class="force-overflow"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2 " href="#">
+                <img src="logo-fococlipping-standard.png" alt="logo" class="img-fluid ps-3 "
+                    style="max-width: 10%; height: auto; margin-left: 35%;">
+            </a>
+            <button class="navbar-toggler btn-danger" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  " id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center ">
+                    <li class="nav-item active ps-4">
+                        <a class="nav-link" href="#">HOME <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active ps-4">
+                        <a class="nav-link" href="#">ABOUT </a>
+                    </li>
+                    <li class="nav-item active ps-4">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item active ps-4">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item active ps-4">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item active ps-4 p-2">
+                        <button class="btn btn-danger zoom-on-hover"
+                            style="background:#D90429; width: 135px; height: 38px; border-radius: 20px; ">Get
+                            Started</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<div class="wow fadeInDown animated animated" data-wow-delay=".3s">
+  <div class="">
+   <div class="row">
+    <div class="container col-lg-10 p-0 position-relative ">
+        <img src="cover.jpg" class=" cover img-fluid" alt="Cover Image">
+        <div class="position-absolute top-50 start-50 translate-middle text-left ps-4 p-5 rounded-1 zoom-on-hover"
+            style="background-color: rgba(43, 45, 66, 0.6); width: 80%; left: 10%; height: auto; transform: translate(-50%, -50%); ">
+            <div class="row">
+                <div class="col-md-12 offset-md-0"> <!-- Centered column -->
+                    <h2 class="my-auto text-white text-uppercase rectangle-text-1">START YOUR</h2>
+                    <h2 class="my-auto text-white text-uppercase rectangle-text-1 rectangle-text-1-1"
+                       >WORK AROUND THE WORLD<p></p></h2>
+                    <h2 class="my-auto text-white text-uppercase rectangle-text-2">SAMURAI GLOBAL</h2>
+                    <h2 class="my-auto text-white text-uppercase rectangle-text-2">PRIVATE LIMITED</h2>
+                    <button class="btn btn-danger zoom-on-hover wow rubberBand infinite animated animated"
+                        style="width: 8.4375rem; height: 2.375rem; border-radius: 1.25rem; margin-bottom: 0px; margin-top: 45px; background-color: #D90429;">Work
+                        with Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!------------------------------------------------info cards  1-------------------->
+    <div class="container mt-5">
+        <div class="row">
+          
+            <div class="col-md-4 ps-4 mb-5 p-5 text-white shadow-lg rounded-2">
+<div class="wow fadeInLeft animated animated" data-wow-delay=".5s" >
+              <div class="card custom-card text-white zoom-on-hover wow swing infinite"style="animation-duration:3s; animation-delay:1.2s; animation-iteration-count:infinite;">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class=" card-title text-center">INNOVATIVE SOLUTIONS</h4><br>
+                      <p class="card-text" style="margin-bottom:6%">Discover cutting-edge solutions crafted for your challenges. Our creative approach ensures your business stays ahead in a dynamic landscape.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+          
+          
+          <div class="col-md-4  ps-4 mb-5 p-5 text-white shadow-lg rounded-2">
+<div class="wow fadeInUp animated animated" data-wow-delay=".5s">
+              <div class="card custom-card  text-white zoom-on-hover wow pulse infinite"style="animation-duration:3s; animation-delay:1.2s; animation-iteration-count:infinite;">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class="card-title text-center">PROFESSIONAL TEAM</h4><br>
+                      <p class="card-text">Trust your vision to our dedicated team of professionals. With a wealth of experience, we handle every project with precision, creativity, and a commitment to outstanding results.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="col-md-4  ps-4 mb-5 p-5 text-white shadow-lg  rounded-2">
+<div class="wow fadeInRight animated animated" data-wow-delay=".5s">
+              <div class="card custom-card text-white zoom-on-hover wow swing infinite"style="animation-duration:3s; animation-delay:1.2s; animation-iteration-count:infinite;">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class=" card-title text-center">QUALITY SERVICE</h4><br>
+                      <p class="card-text">Elevate your experience with our commitment to satisfaction. Trust us to deliver reliable, efficient services with attention to detail, exceeding your expectations every step of the way.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<!----------------------------------------------------- Section card 1 --------------------------->
+<div class="container-fluid">
+<div class="container mt-3">
+    <div class="row">
+        <!-- Card shadow -->
+        
+        <div class="mb-2 col-md-5 ps-2 img-fluid position-relative "style="width: 32rem; height: 21rem; border-radius: 1.375rem;">
+<div class="wow fadeInLeft animated animated" data-wow-delay=".5s">
+            <div class="position-absolute " style="width: 96%; height: 96%;border-radius: 1.375rem; box-shadow: 34px 32px 0px rgba(217,4,41);"></div>
+            <!-- Actual card -->
+
+            <div class="card custom-card-2 zoom-on-hover-nobg">
+                <img src="Group4.jpg" class="card-img-bottom img-fluid custom-card-2 wow pulse infinite" alt="..."style="animation-duration:5s; animation-delay:1.2s; animation-iteration-count:infinite;">
+                <div class="card-body card-img-overlay"></div>
+            </div>
+        </div>
+      </div>
+
+        <!-- Additional text on the right side of the card -->
+        
+        <div class="col-md-7 ms-auto p-2 ps-2">
+<div class="wow fadeInRight animated animated" data-wow-delay=".5s">
+            <div class="">
+                <h1 style="font-weight: 600;font-size:1.7rem;">ABOUT OUR COMPANY<br> SAMURAI GLOBAL(PRIVATE)LIMITED</h1><br>
+                <p class="" style="font-size:1.3rem;">Our goal is to elevate the quality of life for Sri Lankans by creating enhanced employment opportunities globally, fostering improved livelihoods and contributing to sustained economic growth.</p>
+                <button class="btn btn-danger zoom-on-hover wow pulse infinite"
+                        style="width: 135px; height: 38px; border-radius: 20px; margin-bottom: 0px; margin-top: 5px; background-color: #D90429;">Read More
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+<!---------------------------------logo bar------------------------------------->
+
+<div class="ps-0 mt-5 mb-5">
+  <div class="row">
+<div class="wow zoomIn animated animated" data-wow-delay=".5s">
+    <div class="col-lg-12 img-fluid">
+      
+                <img src="logo bar.png" class="img-fluid logobar" alt="...">      
+    </div>
+  </div>
+  </div>
+  <div>
+
+
+<div class="container mt-5">
+  <div class="text-center ">
+    <h1 class="wow flash infinite animated animated"style="font-weight: 600;font-size:2.2rem; animation-duration:2.5s; animation-delay:1.2s; animation-iteration-count:infinite;">WHAT’S YOUR SKILL <br>YOUR SKILL</h1>
+    <p class="mt-3 wow zoomInUp animated animated" data-wow-delay=".5s" style="font-size:1.5rem;">Our aim is to improve the living standards of Sri Lankans <br>by introducing better jobs around the world.</p>
+
+  </div>
+</div>
+</div>
+<!------------------------------------------------------info cards 2---------------------------------->
+<div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 ps-4 mb-0 p-5 mt-0 text-white shadow-lg rounded-2">
+              <div class="wow fadeInLeft animated animated">
+              <div class="card custom-card-3 text-white zoom-on-hover">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class=" card-title text-center mt-5 wow tada infinite" style="font-size:150%; font-weight: 600; animation-duration:5s; animation-delay:2s; animation-iteration-count:infinite;">Technical Intern Training</h4><br><br>
+                      <p class="card-text text-center " style="font-size:100%; margin-top:-7%; margin-bottom:8%;">Gain hands-on tech experience. Solve real-world problems and learn from pros.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4  ps-4 mb-0 p-5 mt-0 text-white shadow-lg rounded-2">
+              <div class="wow fadeInDown animated animated">
+              <div class="card custom-card-3  text-white zoom-on-hover">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class="card-title text-center mt-5 wow tada infinite" style="font-size:150%; font-weight: 600;animation-duration:5s; animation-delay:2.5s; animation-iteration-count:infinite;" >Specified Skilled Workers</h4><br><br>
+                      <p class="card-text text-center" style="font-size:100%; margin-top:-7%;">Connect with employers seeking your skills. Join a skilled workers' community for tailored opportunities.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4  ps-4 mb-0 p-5 mt-0 text-white shadow-lg  rounded-2">
+              <div class="wow fadeInRight animated animated">
+              <div class="card custom-card-3 text-white zoom-on-hover">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class=" card-title text-center mt-5 wow tada infinite" style="font-size:150%; font-weight: 600;animation-duration:5s; animation-delay:3s; animation-iteration-count:infinite;">Engineers</h4><br><br>
+                      <p class="card-text text-center" style="font-size:100%; margin-top:-7%; margin-bottom:8%;">Engineer your success. Access projects and thrive in your engineering career.  </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4  ps-4 mb-0 p-5 mt-0 text-white shadow-lg  rounded-2">
+        <div class="wow fadeInLeft animated animated">
+              <div class="card custom-card-3 text-white zoom-on-hover">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class=" card-title text-center mt-5 wow tada infinite" style="font-size:150%; font-weight: 600;animation-duration:5s; animation-delay:3.5s; animation-iteration-count:infinite;">Skilled Labours</h4><br><br>
+                      <p class="card-text text-center" style="font-size:100%; margin-top:-7%;">Power your career. Connect with employers valuing your skills in construction, manufacturing, and more.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4  ps-4 mb-0 p-5 mt-0 text-white shadow-lg  rounded-2">
+        <div class="wow fadeInUp animated animated">
+              <div class="card custom-card-3 text-white zoom-on-hover">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class=" card-title text-center mt-5 wow tada infinite" style="font-size:150%; font-weight: 600; animation-duration:5s; animation-delay:4s; animation-iteration-count:infinite;">Business Manager</h4><br><br>
+                      <p class="card-text text-center" style="font-size:100%; margin-top:-7%;">Lead with us. Sharpen decision-making and propel your career as a successful business leader. </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4  ps-4 mb-0 p-5 mt-0 text-white shadow-lg  rounded-2">
+        <div class="wow fadeInRight animated animated">
+              <div class="card custom-card-3 text-white zoom-on-hover">
+                  <div class="card-body">
+                      <!-- Card content goes here -->
+                      <h4 class=" card-title text-center mt-5 wow tada infinite" style="font-size:150%; font-weight: 600; animation-duration:5s; animation-delay:4.5s; animation-iteration-count:infinite;">Intracompany Transferee</h4><br><br>
+                      <p class="card-text text-center" style="font-size:100%; margin-top:-7%;">Navigate transitions seamlessly. Integrate, adapt, and excel in your changed environment.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-------------we help bg img-------------------------->
+
+<div class="wow zoomInDown" style="">
+<div class="ps-0 col-lg-12 mt-5 mb-5">
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="we help.jpg" class="d-block w-100 custom-card-4" alt="...">
+                <div class="carousel-caption d-block">
+                    <h1 class="text-white zoom-on-hover-nobg wow pulse infinite" style="font-size:3.2vw; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); animation-duration:3s; animation-delay:4.5s; animation-iteration-count:infinite;">We Help You to,<br>Pass Through VISA Applications to all around the world.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!----------------------------------------------------- Section card 2 --------------------------->
+<div class="container mt-3">
+    <div class="row">
+       
+
+        <!-- Additional text on the right side of the card -->
+        
+        <div class="col-md-7 ps-5">
+          <div class="wow fadeInRight">
+            <div class="">
+                <h1 style="font-weight: 600;font-size:1.7rem;">JOIN WITH US<br>FOREIGN EMPLOYMENTS</h1><br>
+                <p class="" style="font-size:1.3rem;">Discover new horizons with foreign employment 
+                  opportunities. Explore diverse job openings, connect with 
+                  international employers, and take your career to new 
+                  heights. Embrace the world of possibilities today.</p>
+                <button class="btn btn-danger zoom-on-hover wow pulse infinite"
+                        style="width: 135px; height: 38px; border-radius: 20px; margin-bottom: 0px; margin-top: 5px; background-color: #D90429;">MORE DETAILS
+                </button>
+            </div>
+        </div>
+      </div>
+
+         <!-- Card shadow -->
+        <div class="mb-5 ms-auto col-md-5 ps-2 p-2 img-fluid position-relative "style="width: 27rem; height: 21rem; border-radius: 1.375rem;">
+          <div class="wow fadeInLeft">
+            <div class="position-absolute " style="width: 95%; height: 94%;border-radius: 1.375rem; box-shadow: 34px 32px 0px rgba(217,4,41);"></div>
+            
+            <!-- Actual card -->
+            <div class="card custom-card-2-2 zoom-on-hover-nobg">
+                <img src="Group5.jpg" class="card-img-bottom custom-card-2-2 wow pulse infinite" alt="..."style="animation-duration:5s; animation-delay:1.2s; animation-iteration-count:infinite;">
+                <div class="card-body card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!-------------Expert bg img-------------------------->
+
+<div class="wow zoomInUp animated animated">
+<div class=" ps-0 mt-5 mb-5">
+    <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="expert.jpg" class="d-block w-100 custom-card-5" alt="...">
+                <div class="carousel-caption d-block">
+                    <h1 class="text-white zoom-on-hover-nobg" style="font-size:2.5vw; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); margin-top: 100%;">Expert Guidance for Lasting Success.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div data-aos="fade-up">
+<div class="container mt-3">
+  <div class="text-center ">
+    <h1 class="wow flash infinite animated animated" style="font-weight: 600;font-size:2rem; animation-duration:2.5s; animation-delay:1.2s; animation-iteration-count:infinite; ">Latest News</h1>
+    <p class="mt-3" style="font-size:1.5rem;">Our latest updates can be seen here. If you need more information please contact us.</p>
+
+  </div>
+  
+</div>
+</div>
+
+
+<!------------------------------------------------------info cards 3---------------------------------->
+<div class="container mt-5">
+        <div class="row">
+
+        <div class="col-md-4 ps-4 mb-0 p-5 mt-0 text-white shadow-lg rounded-2">
+          <div class="wow shake infinite" style="animation-duration:5s; animation-delay:1.2s; animation-iteration-count:infinite;">
+       <div class="card custom-card-6 text-white zoom-on-hover-nobg" > 
+            <img src= "Group4.jpg" class="card-img-top"  alt="img" style="border-radius:1rem ;"> 
+            <div class="card-body"> 
+                <p class="card-text text-center mt-3" style="font-size:.99rem; font-weight: 600; margin-top:0%;"> 
+                    Succesful Story<br>Specified Skilled Worker (Caregiver)<br> Visa to Japan.
+                </p>
+                <button class="btn btn-danger text-center zoom-on-hover-nobg"
+                        style=" font-size:0.7rem;width: 60%; height: 23%; border-radius: 7px; margin-bottom:2%; margin-top:-3%; margin-left: 20%;background-color: #D90429;">READ MORE
+                </button> 
+            </div> 
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4 ps-4 mb-0 p-5 mt-0 text-white shadow-lg rounded-2">
+        <div class="wow pulse infinite" style="animation-duration:2.5s; animation-delay:1.2s; animation-iteration-count:infinite;">
+       <div class="card custom-card-6 text-white zoom-on-hover-nobg" > 
+            <img src= "Group4.jpg" class="card-img-top"  alt="img" style="border-radius:1rem ;"> 
+            <div class="card-body"> 
+                <p class="card-text text-center mt-3" style="font-size:.99rem; font-weight: 600; margin-top:0%;"> 
+                    Succesful Story<br>Specified Skilled Worker (Caregiver)<br> Visa to Japan.
+                </p>
+                <button class="btn btn-danger text-center zoom-on-hover-nobg"
+                        style=" font-size:0.7rem;width: 60%; height: 23%; border-radius: 7px; margin-bottom:2%; margin-top:-3%; margin-left: 20%;background-color: #D90429;">READ MORE
+                </button> 
+            </div> 
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4 ps-4 mb-0 p-5 mt-0 text-white shadow-lg rounded-2">
+        <div class="wow shake infinite" style="animation-duration:5s; animation-delay:1.2s; animation-iteration-count:infinite;">
+       <div class="card custom-card-6 text-white zoom-on-hover-nobg" > 
+            <img src= "Group4.jpg" class="card-img-top"  alt="img" style="border-radius:1rem ;"> 
+            <div class="card-body"> 
+                <p class="card-text text-center mt-3" style="font-size:.99rem; font-weight: 600; margin-top:-5%;"> 
+                    Succesful Story<br>Specified Skilled Worker (Caregiver)<br> Visa to Japan.
+                </p>
+                <button class="btn btn-danger text-center zoom-on-hover-nobg"
+                        style=" font-size:0.7rem;width: 60%; height: 23%; border-radius: 7px; margin-bottom:2%; margin-top:-3%; margin-left: 20%;background-color: #D90429;">READ MORE
+                </button>
+            </div> 
+        </div>
+      </div>
+      </div>
+          
+        </div>
+      </div>
+
+
+
+<!-- Footer Section -->
+
+<div class="footer" id="footer">
+    <footer class="footer mt-5" style="background: #2B2D42; color: #fff; padding:40px 0;">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Company Section -->
+                <div class="col-lg-4 ps-4">
+                    <img src="Samurai Global logo source file.png" alt="Samurai Logo" class="img-fluid mb-1" style="width: 25.813rem; height:3.813rem;">
+                    <p style="font-size:0.813rem;margin-top:10%;">Our aim is to improve the living standards of Sri Lankans by introducing better jobs around the world.</p>
+
+                    <!-- Social Media Icons -->
+                    <div class="d-flex " style="margin-top:10%;">
+                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Other Pages Section -->
+                <div class="col-lg-2 mb-4 ps-4 mt-3">
+                    <h5>Other Pages</h5>
+                    <ul class="list-unstyled"style="margin-top:10%;">
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>Home</a></li>
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>About Us</a></li>
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>Services</a></li>
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>Gallery</a></li>
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-lg-2 mb-4 ps-4 mt-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled"style="margin-top:10%; ">
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>Privacy Policy</a></li>
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>Term Of Service</a></li>
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>Credits</a></li>
+                        <li class="active"><a href="#"><i class="bi bi-caret-right-fill"></i>FAQ</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Newsletter Section -->
+                <div class="col-lg-4 mb-4 ps-4 mt-3">
+                    <h5>Newsletter</h5>
+                    <p style="margin-top: 10%; font-size: 0.813rem;">
+                        Stay in the loop with our newsletter. Get the latest news, exclusive content, and exciting updates delivered straight to your inbox.
+                    </p>
+
+                    <!-- Newsletter Form -->
+                    <form class="input-group mt-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+                        <button class="btn btn-danger" type="submit" id="button-addon2">Subscribe Now</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+       
+    </footer>
+     <div class="text-center text-dark mt-5 ps-4 p-4" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2024 Copyright:
+      <a class="" href="#">Samurai Gloabal (Pvt) LTD</a><br><small>
+      Design & Dev by <a href="#"><i class="bi bi-heart-fill"></i>Project{x}TM</a></small> 
+    </div>
+
+  </div>
+
+
+<!----js-------------->
+<script>
+ 
+
+    // Event listener to detect when the page has fully loaded
+    window.addEventListener('load', function () {
+        // Hide the spinner after the page has loaded
+        hideSpinner();
+    });
+
+    function showSpinner() {
+        document.getElementById('spinner-overlay').style.display = 'flex';
+    }
+
+    function hideSpinner() {
+        document.getElementById('spinner-overlay').style.display = 'none';
+    }
+
+    // Simulate loading by delaying the hiding of the spinner
+    // Replace this with your actual loading logic
+    setTimeout(function () {
+        hideSpinner();
+    }, 5000); // Adjust the delay as needed
+
+</script>
+
+
+  <!--Bootstrap JS dependencies for Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+  
+</body>
+
+</html>
